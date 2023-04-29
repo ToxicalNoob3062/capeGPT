@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Cape GPT",
+  "description": "Give super powers to your chat GPT!",
+  "version": "3",
+  "action": {},
+  "icons": {
+    "128": "./icon.png"
+  },
+  "background": {
+    "service_worker": "./dist/back.min.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "run_at": "document_idle",
+      "css": [
+        "./dist/nice.min.css"
+      ],
+      "js": [
+        "./dist/cont.min.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
