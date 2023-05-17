@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Cape GPT",
   "description": "Give super powers to your chat GPT!",
-  "version": "3",
+  "version": "3.1",
   "action": {},
   "icons": {
     "128": "./icon.png"
